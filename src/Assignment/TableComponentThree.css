@@ -1,0 +1,12 @@
+.mainThree {
+    width: 700px;
+    height: 320px;
+    margin-left: 86px;
+
+    border-collapse: collapse;
+}
+
+.mainDivThree {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}

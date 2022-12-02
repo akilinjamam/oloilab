@@ -1,23 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+import PartOne from './Assignment/PartOne';
+import { useEffect, useState } from 'react';
+import TableComponentOne from './Assignment/TableComponentOne';
+import TableComponentTwo from './Assignment/TableComponentTwo';
+import TableComponentThree from './Assignment/TableComponentThree';
+import Test from './Assignment/Test';
+import TestTwo from './TestTwo';
 
 function App() {
+
+  const [data, setData] = useState([])
+
+  console.log(data)
+
+  useEffect(() => {
+
+    fetch('tableTestData.json')
+      .then(response => response.json())
+      .then(response => setData(response))
+  }, [])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PartOne />
+      <TableComponentOne data={data} />
+      <TableComponentTwo data={data} />
+      <TableComponentThree data={data} />
+      {/* <Test data={data} /> */}
+      {/* <TestTwo></TestTwo> */}
     </div>
   );
 }

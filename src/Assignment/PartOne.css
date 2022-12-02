@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap');
+
+body {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+
+}
+
+
+.mainBackground {
+    background-color: #FFFFFF;
+    width: 1093px;
+
+}
+
+.mainDiv {
+    padding-top: 100px;
+    margin-top: 50px;
+}
+
+
+
+.main {
+    width: 920px;
+    height: 320px;
+    margin-left: 86px;
+    margin-right: 87px;
+    border-collapse: collapse;
+}
+
+.main table,
+td,
+th {
+    border: 1px solid #E1E1E1;
+    border-collapse: collapse;
+    height: 40px;
+    width: 175px;
+    padding: 8px 10px 8px 10px;
+}
+
+.main table,
+th {
+    text-align: left;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+
+
+}
+
+.main table,
+td {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+
+}
+
+.columnThree {
+    width: 220px;
+}
+
+.columnThree .color {
+    color: #0071CC;
+}
+
+.main table,
+tr:nth-child(even) {
+    background-color: #F5F5F5;
+}
+
+.oneThName {
+    display: flex;
+    align-items: center;
+
+}
+
+.oneThImg {
+    margin-left: 10px;
+}
+
+.oneThImg:active {
+    width: 12px;
+}
+
+.oneTrDiv {
+    display: flex;
+    align-items: center;
+}
+
+.oneTrName {
+    margin-left: 10px;
+
+}
