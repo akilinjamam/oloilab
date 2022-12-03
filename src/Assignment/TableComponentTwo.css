@@ -10,3 +10,11 @@
     padding-top: 100px;
 
 }
+
+.none {
+    display: none;
+}
+
+.block {
+    display: inline-block;
+}

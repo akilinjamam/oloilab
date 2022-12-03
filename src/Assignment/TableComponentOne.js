@@ -6,7 +6,6 @@ import './TableComponentOne.css'
 const TableComponentOne = ({ data }) => {
 
     const [ok, setOk] = useState(false)
-
     const [number, setNumber] = useState(0)
 
     const handleCycle = () => {
@@ -19,34 +18,24 @@ const TableComponentOne = ({ data }) => {
         }
     }
 
-
-
     const accendingData = [...data].sort((a, b) => a.person.name > b.person.name ? 1 : -1)
-
     const deccendingData = [...data].sort((a, b) => a.person.name > b.person.name ? -1 : 1)
 
     const accendedName = accendingData.map(a => {
         return (
-
             <tr>
                 <td> <div className='oneTrDiv'> <img src={avatar} alt="" /> <span className='oneTrName'>{a.person.name}</span>  </div> </td>
-
                 <td className='columnThree'><a className='color' href=""> {a.email}</a></td>
-
                 <td>{a.role}</td>
             </tr>
-
         )
     })
 
     const deccendingName = deccendingData.map(d => {
-
         return (
             <tr>
                 <td> <div className='oneTrDiv'> <img src={avatar} alt="" /> <span className='oneTrName'>{d.person.name}</span>  </div> </td>
-
                 <td className='columnThree'><a className='color' href=""> {d.email}</a></td>
-
                 <td>{d.role}</td>
             </tr>
         )
@@ -55,16 +44,10 @@ const TableComponentOne = ({ data }) => {
     const defaultDataFlow = data.map(d =>
         <tr>
             <td> <div className='oneTrDiv'> <img src={avatar} alt="" /> <span className='oneTrName'>{d.person.name}</span>  </div> </td>
-
             <td className='columnThree'><a className='color' href=""> {d.email}</a></td>
-
             <td>{d.role}</td>
         </tr>
     )
-
-
-
-
 
     return (
         <div>
