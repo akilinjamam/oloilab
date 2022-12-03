@@ -67,7 +67,6 @@ const TableComponentThree = ({ data }) => {
             <tr>
                 <td> <div className='oneTrDiv'> <img src={avatar} alt="" /> <span className='oneTrName'>{d.person.name}</span>  </div> </td>
                 <td>{d.city}</td>
-
                 <td>{d.joiningDate}</td>
                 <td>{d.role}</td>
             </tr>
@@ -81,7 +80,6 @@ const TableComponentThree = ({ data }) => {
         <tr>
             <td> <div className='oneTrDiv'> <img src={avatar} alt="" /> <span className='oneTrName'>{d.person.name}</span>  </div> </td>
             <td>{d.city}</td>
-
             <td>{d.joiningDate}</td>
             <td>{d.role}</td>
         </tr>
@@ -94,7 +92,6 @@ const TableComponentThree = ({ data }) => {
             <tr>
                 <td> <div className='oneTrDiv'> <img src={avatar} alt="" /> <span className='oneTrName'>{a.person.name}</span>  </div> </td>
                 <td>{a.city}</td>
-
                 <td>{a.joiningDate}</td>
                 <td>{a.role}</td>
             </tr>

@@ -37,6 +37,7 @@ const TableComponentTwo = ({ data }) => {
         }
     }
 
+    // sortings...
     const accendingData = [...data].sort((a, b) => {
         a = a.joiningDate.split('/');
         b = b.joiningDate.split('/');

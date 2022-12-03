@@ -1,12 +1,11 @@
-import logo from './logo.svg';
+
 import './App.css';
 import PartOne from './Assignment/PartOne';
 import { useEffect, useState } from 'react';
 import TableComponentOne from './Assignment/TableComponentOne';
 import TableComponentTwo from './Assignment/TableComponentTwo';
 import TableComponentThree from './Assignment/TableComponentThree';
-import Test from './Assignment/Test';
-import TestTwo from './TestTwo';
+
 
 function App() {
 
@@ -26,8 +25,6 @@ function App() {
       <TableComponentOne data={data} />
       <TableComponentTwo data={data} />
       <TableComponentThree data={data} />
-      {/* <Test data={data} /> */}
-      {/* <TestTwo></TestTwo> */}
     </div>
   );
 }

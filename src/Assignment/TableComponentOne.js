@@ -55,6 +55,8 @@ const TableComponentOne = ({ data }) => {
 
                 <div className='mainDivOne'>
                     <h2 style={{ marginBottom: '50px', marginLeft: '86px' }}>Part : 02</h2>
+
+                    <h3 style={{ marginBottom: '50px', marginLeft: '90px' }}>Note : first time it will show default data as per as json file. whenever you will first time click on arrow updown-button, it will show ascending order of data flow then second time click on button, it will show  descending order of data flow, after the third click, it will show again default order of data flow. </h3>
                     <table className='mainOne'>
                         <tr>
                             <th><div className='oneThName'> <span>Name</span> <img onClick={() => handleCycle(setOk(!ok))} className='oneThImg' src={arrowSymbol} alt="" /></div></th>
@@ -85,10 +87,3 @@ export default TableComponentOne;
 
 
 
-/* 
-
- 
-
-
-
-*/
