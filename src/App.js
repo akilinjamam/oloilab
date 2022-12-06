@@ -21,7 +21,7 @@ function App() {
   }, [])
   return (
     <div className="App">
-      <PartOne />
+      <PartOne data={data} />
       <TableComponentOne data={data} />
       <TableComponentTwo data={data} />
       <TableComponentThree data={data} />
